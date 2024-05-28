@@ -106,3 +106,34 @@ h1 {
     color-scheme: dark;
   }
 }
+
+input[type='checkbox'] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid 1px;
+  position: relative;
+  margin-right: 10px;
+
+  &:checked {
+    background: rgb(241 196 15);
+    border-color: rgb(241 196 15);
+
+    &:after {
+      content: '✔';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+    }
+  }
+}
+
+.bg-auth{
+  background-image: url('/images/foreground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
